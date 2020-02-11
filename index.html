@@ -9,9 +9,11 @@
     <!-- https://reactjs.org/docs/cdn-links.html -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/create-react-class@15.6.2/create-react-class.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel" src="index.js"></script>
+    <script type="text/babel" src="hooks.js"></script>
 </head>
 <body>
     <!-- Note: this page is a great way to try React but it's not suitable for production.
@@ -19,12 +21,14 @@
       
       <div id="root"></div>
       <div id="app"></div>
+      <div id="MVC"></div>
+      <div id="hooks"></div>
 
 
       <script type="text/babel">
   
         ReactDOM.render(
-          <h1>Hello, world!</h1>,
+          <h1>React Clicker!</h1>,
           document.getElementById('root')
         );
   

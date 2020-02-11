@@ -1,0 +1,11 @@
+
+.card {
+    border: 1px solid steelblue;
+    border-radius: 6px;
+    padding: 1rem;
+}
+button {
+    font-size: 3rem;
+    background: none;
+    border: none;
+}
