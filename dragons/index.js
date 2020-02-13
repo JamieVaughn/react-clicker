@@ -1,14 +1,19 @@
 const mountNode = document.getElementById('app');
 const list = document.getElementById('list');
 
+var listOfDragons = dragons.map(i => <li>{i}</li>)
+
 function List(props) {
   console.log(props)
+  console.log(listOfDragons)
   return (
     <ul>
-        {props.dragons.map(i => (
+        {
+        props.dragons.map(i => (
           <li onClick={()=>console.log(i)}>{i}</li>
           )
-        )}
+        )
+        }
     </ul>
   )
 }
@@ -26,5 +31,5 @@ function Dragon (props) {
 var dragons = ['water', 'fire']
 
 ReactDOM.render(<List dragons={dragons}/>, list)
-ReactDOM.render(<Dragon name="Puff"/>, mountNode)
+ReactDOM.render(<Dragon name="water"/>, mountNode)
 

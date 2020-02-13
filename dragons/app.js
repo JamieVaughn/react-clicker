@@ -4,13 +4,13 @@ var dragons = ['water', 'fire', 'air', 'sand', 'ice']
 
 function List(props) {
   console.log(props)
-    const [active, setActive] = React.useState('water')
+  const [active, setActive] = React.useState('water')
 
   return (
     <div>
         <ul>
             {props.dragons.map((i, index) => (
-            <li key={index} onClick={()=>setActive(i)}>{i}</li>
+            <li key={index} onClick={() => setActive(i)}>{i}</li>
             )
             )}
         </ul>
@@ -22,7 +22,7 @@ function List(props) {
 function Dragon (props) {
   const [count, setCount] = React.useState(0)
   return (
-    <div className="dragon" onClick={() => setCount(count +1)}>
+    <div key={props.name} className="dragon" onClick={() => setCount(count +1)}>
       <h1>{props.name}</h1>
       <div>🐉 {count}</div>
     </div>
