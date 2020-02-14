@@ -4,7 +4,7 @@ var dragons = ['water', 'fire', 'air', 'sand', 'ice']
 
 function List(props) {
   console.log(props)
-  const [active, setActive] = React.useState('water')
+    const [active, setActive] = React.useState('water')
 
   return (
     <div>
