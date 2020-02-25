@@ -1,3 +1,4 @@
+const list = document.getElementById('list');
 const arena = document.getElementById('app');
 
 function Arena() {
@@ -56,4 +57,5 @@ function Dragon (props) {
   )
 }
 
+ReactDOM.render(<Arena />, list)
 ReactDOM.render(<Arena />, arena)
